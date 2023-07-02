@@ -29,7 +29,7 @@ const Editor = ({ question }) => {
 
   const executeCode = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/java/execute", {
+      const response = await axios.post("http://localhost:5000/math-test/matrix", {
         code: content
       });
       setOutput(response.data.output);

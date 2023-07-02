@@ -6,6 +6,7 @@ import HomePage from './HomePage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Question from './Question';
 import CodeLearn from './CodeLearn';
+import CodeLearnPage from './Codelearnpage';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -14,6 +15,7 @@ ReactDOM.render(
       <Route path="/question" element={<Question />} />
       <Route path="/app" element={<App />} />
       <Route path="/codelearn" element={<CodeLearn />} />
+      <Route path="/codelearn/:topic" component={CodeLearnPage} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')

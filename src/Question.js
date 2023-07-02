@@ -86,6 +86,7 @@ const Question = () => {
                         </button>
                     </span>
                 ))}
+                <h1 className="display-4">COde</h1>
                 <CodeLearn
                     selectedQuestion={selectedQuestion}
                     codeEditorRef={codeEditorRef}
